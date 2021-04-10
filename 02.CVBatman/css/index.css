@@ -1,0 +1,88 @@
+/* CONTORNO */
+
+body{
+    margin: 0px auto;
+    padding: 0px;
+    
+}
+
+/* HEADER  */
+
+header{
+    background-color: rgb(214, 213, 213);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+img#bat{
+    padding-bottom: 15px;
+}
+
+h1{
+    background-color: rgb(189, 187, 187);
+    color: rgb(7, 7, 70);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    letter-spacing: 10px;
+    padding: 8px 0px;
+    word-spacing: 30px;
+    
+}
+
+/* MAIN */
+
+main{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+section{
+    margin-bottom: 30px;  
+}
+
+h4{
+    background-color:  rgb(189, 187, 187);
+    color: rgb(134, 25, 25);
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50px;
+    font-size: small;
+}
+
+
+
+dl{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+
+}
+
+span{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1F497D;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.footer_img{
+    width: 16px;
+    height: 16px;
+}
+
+
+p{
+    margin-bottom: 5px;
+}
