@@ -9,6 +9,7 @@ Los proyectos desarrollados durante le curso se alojan en la carpeta raíz de es
 2. **BatmanCV:** Se construye la hoja de vida de batman para aplicar los primeros estilos css visto en el curso. Link: [BatmanCV](https://camagarzong.github.io/Proyectos-curso-Frontend-I---Digital-House---Certified-Tech-Developer---Camilo-Garzon/02.CVBatman/).
 3. **Mejora de Receta:** Se mejora la pagina de receta, estableciendole una imagen como fondo, cambiandole el estilo del texto(Tipografía) y agragandole logotipos. Link: [Receta (Fondos, logos y tipografía)](https://camagarzong.github.io/Proyectos-curso-Frontend-I---Digital-House---Certified-Tech-Developer---Camilo-Garzon/03.FondosYLogos/).
 4. **Cartas de Superheroes:** Se construye una pagina que contiene cartas infográficas de los superheroes. Se implementa la teoria de modelo de cajas, z-index y posicion absoluta/relativa para su realización. Link: [Cartas de Superheroes](https://camagarzong.github.io/Proyectos-curso-Frontend-I---Digital-House---Certified-Tech-Developer---Camilo-Garzon/04.CartasSuperheroes/).
+5. **Cartas de Superheroes con Forms de ingreso y registro:** Se amplia la pagina que contiene cartas infográficas de los superheroes. Se implementa la creacion de forms, el uso de variables y la variable de calculo en el CSS. Link: [Cartas-Superheroes con Forms](https://camagarzong.github.io/Proyectos-curso-Frontend-I---Digital-House---Certified-Tech-Developer---Camilo-Garzon/05.CartasSuperConForms/).
 
 
 ### Lenguajes
