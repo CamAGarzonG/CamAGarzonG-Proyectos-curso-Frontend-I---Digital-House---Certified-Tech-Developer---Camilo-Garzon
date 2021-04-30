@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --ancho_form:954px;
+    --margen_form: 40px 0 100px 0;
+    --ancho_columna:35.8%;
+    --espaciado_chechbox:13px;
+    --espaciado_button:18px;
+    --radio_input:15.3407px;
+    --altura_cuadrotexto: 307px;
+    --altura_columna:623.32px;    /*Verificar en responsive si se deja valor fijo y borrar variable*/
+}
+
+*{
+    color: rgb(253, 253, 253);
+}
+
+/* ----- CAJA FORMULARIO ----- */
+
+    .formulario {
+    /* position: relative; */
+    width: var(--ancho_form);
+    font-family: 'Inter', sans-serif;
+    margin: var(--margen_form);
+    background-color: #00669F;
+    border-radius: 48px;
+    }
+
+    .formulario .titulo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 72px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    }   
+    .formulario .frase_titulo{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 14px; 
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    }
+
+
+     /* ----- columnas ----- */
+
+    .columnas1, .columnas2 {
+    width: var(--ancho_columna);
+    float: left;
+    border: 1px solid red;
+    }
+    .columnas2 {
+    margin-left: 2.4%;
+    height: var(--altura_columna);
+    }
+    .columnas1{
+    margin-left: 13%;
+    height: var(--altura_columna);
+    }
+
+    .columna3{
+        margin-left: 13%;
+        width: calc( (var(--ancho_columna) * 2) + 2.4%);
+        border: 1px solid red;
+        float:left;
+    }
+
+    /* ----- TEXTO DE LOS INPUT -----  */
+    
+    .formulario label ,.texto {
+    /* display: block; */
+
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    }  
+    .texto{  /* ----- TEXTO DE CHECKBOX Y RADIOBUTTON -----  */
+        margin-bottom: 12px;
+    }
+
+    /* ----- INPUT -----  */
+
+    .formulario .datos{
+
+    padding: 20px 0 20px 10px;
+    color: rgb(0, 0, 0);
+    display: block; 
+    width: 100%; 
+    margin: 20px 0 30px 0;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radio_input);
+    }
+
+    /* ----- CUADRO DE TEXTO -----  */
+    
+    .formulario textarea {
+        min-height: var(--altura_cuadrotexto);
+    }
+
+    /* ----- BOTON DE AÑADIR ARCHIVO -----  */
+
+    .archivo{
+        width: 100%; 
+        margin: 40px 0 60px 0;
+        font-size: 13px;
+        background: none;
+        border: none;
+        border-radius: none;
+    }
+
+    /* ----- LINEA ETRE CHECKS -----  */
+    
+    hr {
+        height: 1px;
+        background-color: #CCCCCC;
+        margin: calc( 34px - var(--espaciado_chechbox) )  0px 22px 0px;
+      }
+
+
+    /* ----- CHECKBOX Y RADIOBUTTONS -----  */
+
+    input.input-checkbox {
+        margin:0px 20px var(--espaciado_chechbox) 0px;
+        height: 20px;   
+        width: 24px;    
+    }
+    label.text_checkbox{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    input.radio_button{
+        height: 20px;
+        width: 20px;
+        margin:0px 20px var(--espaciado_button) 0px;
+    }
+    label.text_radio{
+        font-family: 'Karla', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .formulario .boton{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 44px;
+        padding: 21px 17.53%;
+        border-radius: 23.011px;
+        background: #1CD1B0;
+        border:none;
+        color: black;
+        margin: 15px 0 18px 11vw;
+    }
+
+    .boton:hover{
+        background: rgba(0, 29, 45, 1);
+        border:none;
+        color: rgb(255, 255, 255);
+    }
+
+ 
+    /* ***** MEDIA QUERY ***** */
+    
+    @media screen and (max-width: 980px) {
+    .columnas1, .columnas2 {
+    width: 90%;
+    margin-left: 5%;
+    }
+    }
+
+
+    /* ----- SELECCION DE LABEL - INPUT - SELECT -----  */
+    /* al momento de seleccionarlos */
+    /* ------------------------ */    
+    .formulario input:focus,
+    .formulario textarea:focus,
+    .formulario label:active + input,
+    .formulario label:active + textarea {
+    outline: none;
+    border: 3px solid #10689a;
+    }
+
+        
+    .formulario select:focus {
+    outline: none;
+    }
+    /* ------------------------ */
+
+
+    /*  */

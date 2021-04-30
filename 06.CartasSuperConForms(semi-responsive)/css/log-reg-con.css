@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color_tope_1: rgb(28,209,176,1);
+    --color_tope_sup_inf: rgb(0,102,159,1);
+    --color_barra_enlaces: #001D2D;
+
+    /* 1116 */
+    --altura_pantalla:890px;
+    /*  */
+
+    --altura_tope_1:24px;
+    --altura_tope_2:80px;
+    --altura_tope_enlaces:40px;
+    --altura_tope_inf:60px;
+    --altura_login:428px;
+    --altura_registro:574px;
+    --altura_contacto:633.79px;
+    --font_tope_2:30px;
+}
+
+@media only screen and (max-width: 347px){
+    :root{
+        --altura_tope_2:80px;
+        --font_tope_2:20px;
+    }
+}
+    
+
+
+@media only screen and (max-width: 415px) and (min-width : 349px) {
+    :root{
+        --altura_tope_2:80px;
+        --font_tope_2:25px;
+    }
+
+  }
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    text-decoration: none;
+}
+
+
+/* -------------------------- */
+/* LOGIN */
+/* -------------------------- */
+
+main{
+    justify-content: center;
+    display: flex;
+}
+
+/* CONTENEDOR PADRE FORM */
+.contenedor_login{
+   
+    width: 620px;
+    height: var(--altura_login);
+    margin-top: 15vh;
+    margin-bottom: calc( 15vh + var(--altura_tope_inf) ); 
+}
+
+/* FRASE (((LOGIN))) */
+#frase_login_registro_contacto{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    padding-bottom: 55px;
+    color: #333333;
+}
+
+/* BARRAS FORM */
+input, select, option, textarea{
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    margin-bottom: 20px;
+    padding-left: 29px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+/* BOTONES DEL LOGIN */
+.enter_login{
+    margin: 39px 0 21px;
+    width: 100%;
+    height: 53.79px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    border: none;
+    text-align: center;
+}
+
+/* NOTA DE FORM */
+.account_note{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------- */
+/* REGISTER */
+/* -------------------------- */
+
+.contenedor_registro{
+
+    width: 620px;
+    height: var(--altura_registro);
+    margin-top: 15vh;
+    margin-bottom: calc( 15vh + var(--altura_tope_inf) );  
+}
+
+
+/* BOTONES DEL REGISTER */
+.padre_button{
+    display: flex;
+    justify-content: space-between;
+}
+.enter_register, .reset_register{
+    width: 48%;
+    height: 53.79px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    margin: 30px 0 21px;
+    border-radius: 23.011px;
+    border: none;
+    text-align: center;
+}
+.reset_register{
+    background: #888888;
+}
+.enter_register{
+    background: #1CD1B0;
+}
+
+
+/* -------------------------- */
+/* CONTACTO */
+/* -------------------------- */
+
+.contenedor_contacto{
+    width: 620px;
+    height: var(--altura_contacto);
+    margin-top: 15vh;
+    margin-bottom: calc( 15vh + var(--altura_tope_inf) ); 
+}
+/* #frase_login_contacto{
+    padding-bottom: 50px;
+} */
+
+textarea{
+    height: 251px;
+}
+
